@@ -18,9 +18,9 @@
                 <li><a href="#/login">登录</a></li>
                 <li><a href="#/rooms">房间列表</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><img class="img-rounded" src="https://secure.gravatar.com/avatar/6abbe6f2b792535c06e2e9abb3a6faf8?s=30" alt=""></a></li>
-                <li><a href="#">用户名</a></li>
+            <ul ng-show="user" class="nav navbar-nav navbar-right">
+                <li><a href="#"><img class="img-rounded" ng-src="{{user.avatar}}" ></a></li>
+                <li><a href="#">{{user.email}}</a></li>
             </ul>
         </div>
     </div>

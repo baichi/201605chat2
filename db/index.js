@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+mongoose.Promise = Promise;
 var settings = require('../settings')
 mongoose.connect(settings.dbUrl);
 // 第一步定义模型骨架
