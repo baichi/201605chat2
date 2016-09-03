@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="zfpxchat">
 <head>
     <meta charset="UTF-8">
     <title>珠峰聊天室</title>
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../public/lib/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
             <div class="navbar-brand">珠峰聊天室</div>
@@ -18,15 +18,22 @@
                 <li><a href="#/rooms">房间列表</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href=""><img class="img-rounded" src="https://secure.gravatar.com/avatar/6abbe6f2b792535c06e2e9abb3a6faf8?s=30" alt=""></a></li>
-                <li><a href="">用户名</a></li>
+                <li><a href="#"><img class="img-rounded" src="https://secure.gravatar.com/avatar/6abbe6f2b792535c06e2e9abb3a6faf8?s=30" alt=""></a></li>
+                <li><a href="#">用户名</a></li>
             </ul>
         </div>
     </div>
 </nav>
+<div class="container" ng-view>
+
+</div>
 </body>
 <script src="/lib/jquery/dist/jquery.js"></script>
 <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
 <script src="/lib/angular/angular.js"></script>
 <script src="/lib/angular-route/angular-route.js"></script>
+<script src="/app.js"></script>
+<script src="/controller/HomeCtrl.js"></script>
+<script src="/controller/LoginCtrl.js"></script>
+<script src="/controller/RoomsCtrl.js"></script>
 </html>
