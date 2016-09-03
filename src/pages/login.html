@@ -1,1 +1,28 @@
-登陆
+
+
+<form novalidate="novalidate" name="userform" ng-submit="login()">
+    <div class="form-group">
+        <label for="email">邮箱</label>
+        <input ng-model="email" ng-required="true" type="email" id="email" name="email" class="form-control">
+    </div>
+    <div class="help-block" ng-show="userform.email.$dirty&&userform.email.$invalid">
+        <div ng-show="userform.email.$error.required" class="alert alert-danger">邮箱必填</div>
+        <div ng-show="userform.email.$error.email" class="alert alert-danger">邮箱格式不合法</div>
+    </div>
+    <button class="btn btn-primary" ng-disabled="userform.$pristine||(userform.$dirty && userform.$invalid) || userform.$submitted" type="submit">登录</button>
+</form>
+
+<div class="help-block">
+    <pre>
+    如果给表单增加一个name属性，那么会在当前元素所在的控制器的scope增加同名属性
+    $scope.userform
+    $scope.userform.email
+    $dirty 已经填过了
+    $pristine 干净的，没填过
+    $valid 填写的内容正确，符合所有的较验规则
+    $invalid 填写的内容不合要求，不符合所有的校验规则
+    $error 是一个对象，里面放着错误的原因
+    </pre>
+</div>
+
+<pre>{{userform|json}}</pre>
