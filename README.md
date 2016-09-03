@@ -1,4 +1,8 @@
-# 201605chat2
-201605chat2
+# 布署指南
+## 1. 克隆本项目
 
-angular+mongoose+express+socket.io
+## 2. 安装前端框架
+
+## 3. 安装后端框架
+
+## 4. 启动项目
