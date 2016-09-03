@@ -1,0 +1,23 @@
+{
+  "name": "201605chat2",
+  "description": "201605chat2",
+  "main": "index.js",
+  "authors": [
+    "zhufengnodejs <zhufengnodejs@126.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/zhufengnodejs/201605chat2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "angular-moment": "^0.10.3"
+  }
+}
